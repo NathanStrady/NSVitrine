@@ -18,11 +18,11 @@ export const Navbar = () => {
     ];
 
     return (
-        <div className="bg-primary z-50 fixed top-0 w-full shadow-primary-foreground">
+        <div className="bg-primary z-50 w-full shadow-primary-foreground">
             <nav className="bg-primary text-primary-foreground max-w-10xl mx-auto p-6 flex items-center justify-between">
                 <p className="text-lg font-bold lg:text-xl">© Fait par Strady Nathan</p>
                 <button
-                    className="relative lg:hidden ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    className="relative md:hidden ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     onClick={toggleMobileMenu}
                     type="button"
                 >
@@ -53,8 +53,8 @@ export const Navbar = () => {
 
 
                 {/* Desktop Menu */}
-                <div className="lg:block hidden">
-                    <ul className="flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2">
+                <div className="hidden md:block">
+                    <ul className="flex flex-row gap-2">
                         {navItems.map((item, index) => (
                             <li key={index} className="flex items-center text-black-600 p-3">
                                 <TransitionLink href={item.href} className="flex item-center">

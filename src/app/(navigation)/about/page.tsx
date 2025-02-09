@@ -52,14 +52,19 @@ const CardAboutMe = () => {
     );
 };
 
+const cardAboutSkills = () => {
+
+};
+
 const About = () => {
     return (
         <>
-            <section className="block z-auto">
+            <section className="bg-secondary">
                 <CardAboutMe />
             </section>
 
-            <section >
+            <section className="bg-primary">
+                <CardAboutMe />
             </section>
         </>
     );

@@ -21,6 +21,10 @@ export default {
             primary: {
               foreground: "#ffffff",
               DEFAULT: "#000000"
+            },
+            secondary: {
+              foreground: "#ffffff",
+              DEFAULT: "#D3D3D3"
             }
           },
         },
@@ -31,8 +35,11 @@ export default {
             primary: {
               foreground: "#11181C",
               DEFAULT: "#ffffff"
-            }
-
+            },
+            secondary: {
+              foreground: "#ffffff",
+              DEFAULT: "#D3D3D3"
+            },
           },
         },
       },
