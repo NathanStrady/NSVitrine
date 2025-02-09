@@ -18,46 +18,52 @@ export const Navbar = () => {
     ];
 
     return (
-        <div>
-            <nav className="block sm:flex md:justify-between md:flex md:items-center p-4 bg-primary text-primary-foreground z-[999]">
-                <div className="container mx-auto flex justify-between items-center">
-                    <p className="font-bold text-lg">© Fait par Strady Nathan</p>
+        <div className="bg-primary z-50 fixed top-0 w-full shadow-primary-foreground">
+            <nav className="bg-primary text-primary-foreground max-w-10xl mx-auto p-6 flex items-center justify-between">
+                <p className="text-lg font-bold lg:text-xl">© Fait par Strady Nathan</p>
+                <button
+                    className="relative lg:hidden ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    onClick={toggleMobileMenu}
+                    type="button"
+                >
+                            <span className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2">
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M4 6h16M4 12h16M4 18h16"
+                                    ></path>
+                                </svg>
+                            </span>
+                </button>
 
-                    <div className="lg:hidden">
-                        <button className="flex items-center" onClick={toggleMobileMenu} type="button">
-                            <svg className="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div className={`${isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"} lg:hidden flex fixed w-full bg-primary top-[60px] left-0 transform transition duration-300 ease-in-out -z-10`}>
-                        <ul className="flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2">
-                            {navItems.map((item, index) => (
-                                <li key={index} className="flex items-center text-black-600 p-3">
-                                    <TransitionLink href={item.href} className="flex item-center">
-                                        {item.name}
-                                    </TransitionLink>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* Desktop Menu */}
-                    <div className="hidden lg:block">
-                        <ul className="flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2">
-                            {navItems.map((item, index) => (
-                                <li key={index} className="flex items-center text-black-600 p-3">
-                                    <TransitionLink href={item.href} className="flex item-center">
-                                        {item.name}
-                                    </TransitionLink>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+                <div className="md:hidden">
+                    <ul className={`bg-primary w-full absolute top-full left-0 border-b border-gray-200 flex flex-col items-center transition-transform duration-300 ease-in-out
+                        ${isMobileMenuOpen ? "translate-y-0 -z-10" : "-translate-y-full -z-10"} md:static md:z-10 md:w-min md:transform-none md:border-none`}
+                    >
+                        {navItems.map((item, index) => (
+                            <li key={index} className="py-4 md:py-0 md:mr-6">
+                                <TransitionLink href={item.href} className="flex item-center">
+                                    {item.name}
+                                </TransitionLink>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
 
 
+                {/* Desktop Menu */}
+                <div className="lg:block hidden">
+                    <ul className="flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2">
+                        {navItems.map((item, index) => (
+                            <li key={index} className="flex items-center text-black-600 p-3">
+                                <TransitionLink href={item.href} className="flex item-center">
+                                    {item.name}
+                                </TransitionLink>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </nav>
         </div>
     );
