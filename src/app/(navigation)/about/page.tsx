@@ -5,7 +5,7 @@ import me from "@/assets/ns_photo.png"
 // Correction du nom du composant (majuscule)
 const CardAboutMe = () => {
     return (
-        <div className="flex items-center justify-center h-screen">
+        <div className="flex items-center justify-center h-screen ">
             <div className="grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-4 lg:max-h-[24rem]
     md:grid-cols-2 md:grid-rows-2 md:gap-4 md:max-h-[20rem]
     sm:grid-cols-1 sm:grid-rows-1 sm:gap-3 sm:max-h-[14rem]">
@@ -55,7 +55,7 @@ const CardAboutMe = () => {
 const About = () => {
     return (
         <>
-            <section>
+            <section className="block z-auto">
                 <CardAboutMe />
             </section>
 
