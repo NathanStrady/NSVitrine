@@ -18,12 +18,21 @@ export default {
           colors: {
             background: "#ffffff",
             foreground: "#11181C",
+            primary: {
+              foreground: "#ffffff",
+              DEFAULT: "#000000"
+            }
           },
         },
         dark: {
           colors: {
             background: "#000000",
             foreground: "#ECEDEE",
+            primary: {
+              foreground: "#11181C",
+              DEFAULT: "#ffffff"
+            }
+
           },
         },
       },
