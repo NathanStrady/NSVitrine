@@ -18,7 +18,7 @@ export const Navbar = () => {
     ];
 
     return (
-        <div className="bg-primary z-50 w-full shadow-primary-foreground">
+        <div className="bg-primary z-50 w-full fixed top-0 shadow-primary-foreground">
             <nav className="bg-primary text-primary-foreground max-w-10xl mx-auto p-6 flex items-center justify-between">
                 <p className="text-lg font-bold lg:text-xl">© Fait par Strady Nathan</p>
                 <button
@@ -38,8 +38,8 @@ export const Navbar = () => {
                 </button>
 
                 <div className="md:hidden">
-                    <ul className={`bg-primary w-full absolute top-full left-0 border-b border-gray-200 flex flex-col items-center transition-transform duration-300 ease-in-out
-                        ${isMobileMenuOpen ? "translate-y-0 -z-10" : "-translate-y-full -z-10"} md:static md:z-10 md:w-min md:transform-none md:border-none`}
+                    <ul className={`bg-primary w-full absolute top-full left-0 border-b -z-10 border-gray-200 flex flex-col items-center transition-transform duration-300 ease-in-out
+    ${isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"}`}
                     >
                         {navItems.map((item, index) => (
                             <li key={index} className="py-4 md:py-0 md:mr-6">
