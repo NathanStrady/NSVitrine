@@ -18,7 +18,7 @@ export const Navbar = () => {
     ];
 
     return (
-        <div className="bg-primary z-50 w-full fixed top-0 shadow-primary-foreground">
+        <div className="bg-primary z-50 w-full absolute top-0 shadow-primary-foreground">
             <nav className="bg-primary text-primary-foreground max-w-10xl mx-auto p-6 flex items-center justify-between">
                 <p className="text-lg font-bold lg:text-xl">© Fait par Strady Nathan</p>
                 <button
