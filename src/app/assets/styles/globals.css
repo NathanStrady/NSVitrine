@@ -8,14 +8,16 @@
 :root {
   --background: #ffffff;
   --foreground: #333333;
-  --primary: #522ffe;
+  --primary: #1E90FF;
+  --secondary: #6eb6f6;
   --card: #1d1d1d;
 }
 
 .dark {
   --background: #030304;
   --foreground: #ffffff;
-  --primary: #522ffe;
+  --primary: #1E90FF;
+  --secondary: #6eb6f6;
   --card: #1d1d1d;
 }
 
@@ -41,6 +43,10 @@ body {
   .profile-icon {
     @apply rounded-full
 
+  }
+
+  .highlight {
+    @apply bg-primary rounded-sm px-4 py-1 card-shadow;
   }
 }
 

@@ -3,7 +3,7 @@ import Me from "@/app/components/Presentation/Me";
 
 const Sections = () => {
     return (
-        <main className="flex flex-col gap-[142px] w-full md:max-w-screen-lg pt-[236px] md:pt-60 mx-auto">
+        <main className="flex flex-col gap-[160px] w-full md:max-w-screen-xl pt-[200px] md:pt-40 mx-auto">
             <Me/>
         </main>
     )
