@@ -1,19 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./styles/globals.css";
-import {Navbar} from "@/components/navbar/navbar";
+import "@/app/assets/styles/globals.css";
+import {Navbar} from "@/app/components/navbar/navbar";
 import MainProvider from "@/contexts/MainProvider"
+import {Inter} from "next/font/google"
+import Sections from "@/app/components/Sections/Sections";
+import TopBackground from "@/app/components/Presentation/TopBackground"
 
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({subsets: ["latin"]})
 
 export const metadata: Metadata = {
   title: "Strady Nathan",
@@ -28,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.className} antialiased dark`}
       >
       <MainProvider>
         <Navbar />

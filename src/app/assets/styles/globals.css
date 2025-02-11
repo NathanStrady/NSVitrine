@@ -1,0 +1,59 @@
+@import "./scrollbar.css";
+@import "./card.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #333333;
+  --primary: #522ffe;
+  --card: #1d1d1d;
+}
+
+.dark {
+  --background: #030304;
+  --foreground: #ffffff;
+  --primary: #522ffe;
+  --card: #1d1d1d;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  transition-property: opacity, background, transform, filter;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+
+@layer components {
+  .card-shadow{
+    @apply shadow-[0_3px_10px_rgb(0,0,0,0.2)]
+  }
+
+  .profile-background {
+
+  }
+
+  .profile-icon {
+    @apply rounded-full
+
+  }
+}
+
+
+
+.page-transition {
+  opacity: 0;
+  background: black;
+  transform: translateY(40px);
+  filter: blur(12px);
+}
+
+
+
+
+

@@ -9,40 +9,15 @@ export default {
     "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: 'class',
-  plugins: [
-    heroui({
-      addCommonColors: true,
-      prefix: "heroui",
-      themes: {
-        light: {
-          colors: {
-            background: "#ffffff",
-            foreground: "#11181C",
-            primary: {
-              foreground: "#ffffff",
-              DEFAULT: "#000000"
-            },
-            secondary: {
-              foreground: "#ffffff",
-              DEFAULT: "#D3D3D3"
-            }
-          },
-        },
-        dark: {
-          colors: {
-            background: "#000000",
-            foreground: "#ECEDEE",
-            primary: {
-              foreground: "#11181C",
-              DEFAULT: "#ffffff"
-            },
-            secondary: {
-              foreground: "#ffffff",
-              DEFAULT: "#D3D3D3"
-            },
-          },
-        },
-      },
-    }),
-  ],
+  theme:{
+    extend: {
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        card: "var(--card)",
+      }
+    }
+  },
+  plugins: [heroui()],
 } as Config;

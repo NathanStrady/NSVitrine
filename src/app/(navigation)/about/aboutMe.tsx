@@ -1,9 +1,4 @@
-import me from '@/assets/ns_photo.png'
-
 export const aboutMe = [
-    {
-        image: me
-    },
     {
         title: 'Qui suis-je ? 🧑‍💻',
         description: (

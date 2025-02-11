@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react';
-import {TransitionLink} from "@/components/utils/TransitionLink";
+import {TransitionLink} from "@/app/components/utils/TransitionLink";
 
 
 
@@ -18,8 +18,8 @@ export const Navbar = () => {
     ];
 
     return (
-        <div className="bg-primary z-50 w-full absolute top-0 shadow-primary-foreground">
-            <nav className="bg-primary text-primary-foreground max-w-10xl mx-auto p-6 flex items-center justify-between">
+        <div className="bg-background text-foreground card-shadow w-full absolute top-0 z-50">
+            <nav className="bg-background max-w-10xl mx-auto p-6 flex items-center relative justify-between ">
                 <p className="text-lg font-bold lg:text-xl">© Fait par Strady Nathan</p>
                 <button
                     className="relative md:hidden ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -38,7 +38,7 @@ export const Navbar = () => {
                 </button>
 
                 <div className="md:hidden">
-                    <ul className={`bg-primary w-full absolute top-full left-0 border-b -z-10 border-gray-200 flex flex-col items-center transition-transform duration-300 ease-in-out
+                    <ul className={`bg-background w-full absolute top-full left-0 border-b -z-10 border-gray-200 flex flex-col items-center transition-transform duration-300 ease-in-out
     ${isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"}`}
                     >
                         {navItems.map((item, index) => (

@@ -1,6 +1,6 @@
 "use client"
-import Link, {LinkProps} from "next/link";
-import React, {ReactNode} from "react";
+import Link from "next/link";
+import React from "react";
 import {useRouter} from "next/navigation";
 
 interface TransitionLinkProps extends React.HTMLProps<HTMLDivElement> {

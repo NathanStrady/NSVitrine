@@ -1,9 +1,11 @@
-import {Navbar} from "@/components/navbar/navbar";
+import Sections from "@/app/components/Sections/Sections";
+import TopBackground from "@/app/components/Presentation/TopBackground";
 
 export default function Home() {
   return (
-  <>
-    <h1> Home </h1>
-  </>
+  <div className="relative overflow-clip" id="home">
+    <Sections/>
+    <TopBackground />
+  </div>
   );
 }
