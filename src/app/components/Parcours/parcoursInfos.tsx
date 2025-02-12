@@ -11,10 +11,12 @@ export const parcoursInfos = [
                     </h1>
                     <div>
                         <h1 className="text-start font-semibold block md:text-[16px] md:text-center md:inline">
-                            Bac Général - Mention Assez Bien - Lycée Alfred Kastler à Denain
+                            BUT Informatique - 3ème année
                         </h1>
                         <p className="text-sm block md:mt-1">
-                            Spécialité : Mathématique et Numérique et Sciences de l’Informatique
+                            Parcours A : Réalisation d'applications :
+                            conception, développement,
+                            validation
                         </p>
                     </div>
                 </div>

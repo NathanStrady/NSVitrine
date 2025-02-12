@@ -13,13 +13,13 @@ const Me = () => {
                 <p className="text-center text-sm md:text-[20px] md:text-start md:mx-0 md:self-start">
                     Passionné par l'Informatique depuis le lycée, mon rêve est de développer mon propre jeu vidéo.
                 </p>
-                <div className="card-shadow rounded-lg p-2 w-full">
+                <div className="rounded-lg p-2 w-full">
                     <h1 className="text-2xl/1 text-center text-large font-semibold">
                         Ce site portfolio est fait avec :
                     </h1>
                     <div className="flex flex-wrap justify-center items-center gap-[16px] md:gap-[37px]">
                         {madeWith.map((item, i) => (
-                            <div key={i} className="bg-primary md:block rounded-lg items-center card-shadow">
+                            <div key={i} className="bg-primary md:block rounded-lg items-center">
                                 <Image
                                     src={item.src}
                                     alt="dev icons"

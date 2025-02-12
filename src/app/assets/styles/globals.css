@@ -10,8 +10,8 @@
   --foreground: #333333;
   --primary: #1E90FF;
   --secondary: #6eb6f6;
-  --darkCard: #000038;
-  --card: #1d1d1d;
+  --darkCard: #a8ccec;
+  --card: #dfd9d9;
 }
 
 .dark {
@@ -55,10 +55,8 @@ body {
     @apply bg-darkCard rounded-sm card-shadow;
   }
 
-  
+
 }
-
-
 
 .page-transition {
   opacity: 0;
