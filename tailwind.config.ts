@@ -16,6 +16,7 @@ export default {
         foreground: "var(--foreground)",
         primary: "var(--primary)",
         secondary: "var(--secondary)",
+        darkCard: "var(--darkCard)",
         card: "var(--card)",
       }
     }
