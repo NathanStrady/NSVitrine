@@ -51,8 +51,12 @@ body {
     @apply bg-primary rounded-sm px-4 py-1 card-shadow;
   }
 
+  .dark-card {
+    @apply bg-darkCard rounded-lg card-shadow;
+  }
+
   .card {
-    @apply bg-darkCard rounded-sm card-shadow;
+    @apply card-shadow bg-card rounded-lg;
   }
 
 
