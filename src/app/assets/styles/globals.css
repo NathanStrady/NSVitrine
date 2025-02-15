@@ -68,7 +68,7 @@ body {
   }
 
   .projects-section-title {
-    @apply text-start font-semibold text-[30px] md:text-[35px];
+    @apply text-start font-semibold text-[20px] md:text-[35px];
   }
 
   .projects-section-content {
@@ -77,7 +77,7 @@ body {
 
 
   .skills-section-title {
-    @apply text-center font-semibold text-[30px] md:text-[35px];
+    @apply text-center font-semibold text-[20px] md:text-[35px];
   }
 
   .skills-section-row {

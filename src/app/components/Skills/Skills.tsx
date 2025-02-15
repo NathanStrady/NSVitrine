@@ -22,7 +22,6 @@ const Skills = () => {
                     <div className="px-8 py-6 card card-shadow">
                         <h1 className="skills-section-title">Soft-Skills</h1>
                         <div className="skills-section-row">
-
                             {softSkills.map((s_skill, id) => (
                                 <Skill key={id} icon={s_skill.icon} name={s_skill.text} />
                             ))}
