@@ -7,7 +7,7 @@ const Me = () => {
         <section className="relative flex flex-row items-center z-20 mx-auto md:gap-[37px]">
             <div className="flex flex-col gap-[13px] items-center md:gap-[34px] md:my-[58px] md:items-start">
                 <h1 className="text-2xl/1 text-center font-semibold block md:text-[35px] md:text-start md:inline">
-                    Salutation ! Je me nomme Nathan Strady et j'aime {" "}
+                    Salutations ! Je me nomme Nathan Strady et j'aime {" "}
                     <span className="block text-[27px] highlight mt-2 md:text-[40px] md:inline md:mt-0"> Développer</span> :)
                 </h1>
                 <p className="text-center text-sm md:text-[20px] md:text-start md:mx-0 md:self-start">

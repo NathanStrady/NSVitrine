@@ -1,5 +1,5 @@
-@import "./scrollbar.css";
-@import "./card.css";
+@import "scrollbar.css";
+@import "background.css";
 
 @tailwind base;
 @tailwind components;
@@ -51,12 +51,37 @@ body {
     @apply bg-primary rounded-sm px-4 py-1 card-shadow;
   }
 
+  .button {
+    @apply bg-primary rounded-sm px-4 py-1 card-shadow;
+  }
+
   .dark-card {
     @apply bg-darkCard rounded-lg card-shadow;
   }
 
   .card {
     @apply card-shadow bg-card rounded-lg;
+  }
+
+  .section-content {
+    @apply w-full flex flex-col gap-5 md:gap-[10px];
+  }
+
+  .projects-section-title {
+    @apply text-start font-semibold text-[30px] md:text-[35px];
+  }
+
+  .projects-section-content {
+    @apply flex flex-col gap-5 md:gap-[10px];
+  }
+
+
+  .skills-section-title {
+    @apply text-center font-semibold text-[30px] md:text-[35px];
+  }
+
+  .skills-section-row {
+    @apply w-full px-[33px] py-[27px] flex flex-wrap flex-col md:flex-row justify-center items-center gap-[19px] md:gap-[33px];
   }
 
 

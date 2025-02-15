@@ -1,79 +1,30 @@
-import React from "react";
-
-export const parcoursInfos = [
+export const ParcoursAcademique = [
     {
-        title: 'Mes diplômes & Formation en cours 🎓',
-        description: (
-            <div className="flex flex-col items-center space-y-10">
-                <div>
-                    <h1 className="text-center font-semibold text-[16px] md:text-[24px] md:inline">
-                        Ma formation actuelle
-                    </h1>
-                    <div>
-                        <h1 className="text-start font-semibold block md:text-[16px] md:text-center md:inline">
-                            BUT Informatique - 3ème année
-                        </h1>
-                        <p className="text-sm block md:mt-1">
-                            Parcours A : Réalisation d'applications :
-                            conception, développement,
-                            validation
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <h1 className="text-center font-semibold text-[16px] block md:text-[24px] md:inline">
-                        Mes Diplômes
-                    </h1>
-                    <ul className="space-y-2">
-                        <li>
-                            <h1 className="text-start font-semibold block md:text-[16px] md:text-center md:inline">
-                                Bac Général - Mention Assez Bien - Lycée Alfred Kastler à Denain
-                            </h1>
-                            <p className="text-sm block md:mt-1">
-                                Spécialité : Mathématique et Numérique et Sciences de l’Informatique
-                            </p>
-                        </li>
-                        <li>
-                            <h1 className="text-start font-semibold block md:text-[16px] md:text-center md:inline">
-                                Brevet des Collèges - Mention Très Bien - Collège Bayard à Denain
-                            </h1>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        )
+        title: 'BUT Informatique : Campus Universitaire de Maubeuge',
+        description: "Formation au cours de laquelle j'approfondis mes compétences en développement informatique, notamment à travers des projets en équipe : création de sites web, développement de logiciels spécifiques et conception de jeux vidéo.",
+        date: "Septembre 2022 - Aujourd'hui"
     },
     {
-        title: 'Expériences professionnelles 💼',
-        description: (
-            <div className="flex flex-col items-center">
-                <ul className="space-y-8">
-                    <li>
-                        <h1 className="text-start font-semibold block md:text-[16px] md:text-center md:inline">
-                            Alternant (Septembre 2024 à Juillet 2025)
-                        </h1>
-                        <p className="text-sm block md:mt-1">
-                            SKF Aeroengine Valenciennes - Service Informatique - Migration d'application Logiciel vers une application Web
-                        </p>
-                    </li>
-                    <li>
-                        <h1 className="text-start font-semibold block md:text-[16px] md:text-center md:inline">
-                            Intérimaire (Juillet à Août 2024)
-                        </h1>
-                        <p className="text-sm block md:mt-1">
-                            SKF Aeroengine Valenciennes - Service Informatique - Migration d'application Logiciel vers une application Web
-                        </p>
-                    </li>
-                    <li>
-                        <h1 className="text-start font-semibold block md:text-[16px] md:text-center md:inline">
-                            Stagiaire (Avril à Juin 2024)
-                        </h1>
-                        <p className="text-sm block md:mt-1">
-                            SKF Aeroengine Valenciennes - Service Informatique - Projet Power BI
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        )
+        title: 'Baccalauréat Général : Lycée Alfred Kastler',
+        description: "Acquisition des bases de l'informatique et de la programmation à travers la spécialité NSI. Obtention du Baccalauréat avec Mention Assez Bien.",
+        date: "Septembre 2019 - Juillet 2022"
+    },
+]
+
+export const ParcoursPros = [
+    {
+        title: 'Alternant chez SKF Aeroengine',
+        description: "Poursuite des missions réalisées lors de l'intérim, avec le développement et l'amélioration d'une application web interne.",
+        date: "Septembre 2024 - Juillet 2025"
+    },
+    {
+        title: 'Intérimaire chez SKF Aeroengine',
+        description: "Développement d'une application web interne servant de 'boîte à outils' afin de faciliter et optimiser les processus de l'usine.",
+        date: "Juillet 2024 - Août 2024"
+    },
+    {
+        title: 'Stagiaire chez SKF Aeroengine',
+        description: "Mise en place de tableaux de bord Power BI permettant d'anticiper les futurs besoins de l'usine et d'avoir une vision sur ces ressources.",
+        date: "Avril 2024 - Juin 2024"
     },
 ]
