@@ -30,6 +30,9 @@ const Me = () => {
                             </div>
                         ))
                         }
+                        <a className="infos-button flex font-normal p-2.5 gap-2.5" href="https://github.com/NathanStrady/NSVitrine/tree/master" target="_blank">
+                            Voir le code Source <img className="w-8 h-8" src="/icons/github-outline-fill-icon.svg" alt="github-repo"/>
+                        </a>
                     </div>
                 </div>
             </div>

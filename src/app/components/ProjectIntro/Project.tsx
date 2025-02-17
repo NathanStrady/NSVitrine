@@ -42,8 +42,8 @@ const Project = ({title, description, media, mediaType, skills, knowMore}: Props
                 <div className="text-justify text-[15px] md:text-[20px] md:text-start md:mx-0 md:self-start">
                     {description}
                 </div>
-                <div className="text-end pt-5">
-                    <a href={knowMore} className="button" target="_blank" rel="noopener noreferrer">
+                <div className="flex justify-end pt-5">
+                    <a href={knowMore} className="infos-button flex items-center font-normal p-2.5 gap-2.5" target="_blank" rel="noopener noreferrer">
                         En savoir plus
                     </a>
                 </div>

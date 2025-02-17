@@ -77,11 +77,27 @@ body {
 
 
   .skills-section-title {
-    @apply text-center font-semibold text-[20px] md:text-[35px];
+    @apply text-center font-semibold text-[20px] md:text-[25px];
   }
 
   .skills-section-row {
     @apply w-full px-[33px] py-[27px] flex flex-wrap flex-col md:flex-row justify-center items-center gap-[19px] md:gap-[33px];
+  }
+
+  .footer-subtitle {
+    @apply mb-2 text-lg font-semibold uppercase;
+  }
+
+  .icon-clickable {
+    @apply transition-transform duration-300 hover:scale-125 active:scale-90
+  }
+
+  .infos-button {
+    @apply  bg-primary p-2.5 rounded gap-2.5 text-lg md:text-xl font-normal transition-transform duration-300 hover:scale-105 active:scale-90 hover:-rotate-3;
+  }
+
+  .zoom-animation {
+    @apply transition-transform duration-300 hover:scale-110;
   }
 
 
