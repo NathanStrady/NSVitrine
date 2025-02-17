@@ -41,7 +41,7 @@ const Me = () => {
                        alt="Nathan Strady profile"
                        width={420}
                        height={430}
-                       className="hidden md:block absolute w-[420px] h-[430px] top-2 right-6 -z-10"
+                       className="hidden md:block absolute w-[420px] h-[430px] top-12 right-6 -z-10"
                 />
                 <Image src="/images/ns_photo.png"
                        alt="Nathan Strady profile"
