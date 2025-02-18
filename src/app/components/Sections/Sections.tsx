@@ -1,7 +1,7 @@
 import React from "react"
 import Me from "@/app/components/Presentation/Me";
 import Parcours from "@/app/components/Parcours/Parcours";
-import ProjectIntro from "@/app/components/ProjectIntro/Projects";
+import ProjectIntro from "@/app/components/Project/Projects";
 import Skills from "@/app/components/Skills/Skills";
 
 const Sections = () => {
