@@ -12,9 +12,9 @@ export const Navbar = () => {
     };
 
     const navItems = [
-        { name: "Home", href: "/", isActive: true },
-        { name: "About", href: "/about", isActive: false },
-        { name: "Portfolio", href: "/projects", isActive: false },
+        { name: "Compétences", href: "/", isActive: true },
+        { name: "Parcours", href: "/about", isActive: false },
+        { name: "Projets", href: "/SuperIsland", isActive: false },
     ];
 
     return (
@@ -69,5 +69,3 @@ export const Navbar = () => {
     );
 };
 
-export class NavBar {
-}

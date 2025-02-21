@@ -16,23 +16,16 @@ const UnityGame = ({ projectName }: UnityGameProps) => {
     });
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full h-full items-center justify-center">
             {!isLoaded && (
-                <p className="text-white mb-4">
+                <p className="text-white text-center">
                     Chargement de {projectName}... {Math.round(loadingProgression * 100)}%
                 </p>
             )}
-            <div className={`${!isLoaded ? "hidden" : "block"} aspect-video w-full h-full`}>
-                <Unity
-                    unityProvider={unityProvider}
-                    style={{
-                        width: `100vh`,
-                        height: '100%',
-                        justifySelf: `center`,
-                        alignSelf: `center`,
-                    }}
-                />
-            </div>
+            <Unity
+                unityProvider={unityProvider}
+                className="w-full h-full items-center justify-center"
+            />
         </div>
     );
 };
