@@ -10,7 +10,7 @@ type Props = {
     title: string;
     description: string;
     media: string;
-    mediaType: "video" | "image";
+    mediaType: string;
     skills: Array<Skill>;
     knowMore: string;
 };
