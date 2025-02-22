@@ -2,7 +2,6 @@ import React from "react";
 import TopBackground from "@/app/components/Presentation/TopBackground";
 import SectionContainer from "@/app/components/Sections/SectionContainer";
 import SectionHeader from "@/app/components/Sections/SectionHeader";
-import UnityGame from "@/app/components/GameUnity/UnityGame";
 const Secom = () => {
     return (
         <div className="relative overflow-clip" id="home">
