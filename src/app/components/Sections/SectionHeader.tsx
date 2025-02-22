@@ -1,5 +1,4 @@
 import React from "react"
-import Reveal from "@/app/components/Reveal/Reveal";
 
 type Props = React.PropsWithChildren<{
     text: string;
