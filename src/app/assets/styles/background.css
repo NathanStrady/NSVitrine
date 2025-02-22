@@ -1,0 +1,51 @@
+/* https://shenanigans.shoghisimon.ca/collection/css-rain-bg/ */
+.rain-bg {
+    background-image:
+            radial-gradient(4px 100px at 0px 273px, #0f0, #0000),
+            radial-gradient(4px 100px at 310px 273px, #0f0, #0000),
+            radial-gradient(1.5px 1.5px at 155px 136.5px, #0f0 100%, #0000 150%),
+            radial-gradient(4px 100px at 0px 162px, #0f0, #0000),
+            radial-gradient(4px 100px at 310px 162px, #0f0, #0000),
+            radial-gradient(1.5px 1.5px at 155px 81px, #0f0 100%, #0000 150%),
+            radial-gradient(4px 100px at 0px 219px, #0f0, #0000),
+            radial-gradient(4px 100px at 310px 219px, #0f0, #0000),
+            radial-gradient(1.5px 1.5px at 155px 109.5px, #0f0 100%, #0000 150%),
+            radial-gradient(4px 100px at 0px 183px, #0f0, #0000),
+            radial-gradient(4px 100px at 310px 183px, #0f0, #0000),
+            radial-gradient(1.5px 1.5px at 155px 91.5px, #0f0 100%, #0000 150%),
+            radial-gradient(4px 100px at 0px 256px, #0f0, #0000),
+            radial-gradient(4px 100px at 310px 256px, #0f0, #0000),
+            radial-gradient(1.5px 1.5px at 155px 128px, #0f0 100%, #0000 150%),
+            radial-gradient(4px 100px at 0px 129px, #0f0, #0000),
+            radial-gradient(4px 100px at 310px 129px, #0f0, #0000),
+            radial-gradient(1.5px 1.5px at 155px 64.5px, #0f0 100%, #0000 150%),
+            radial-gradient(4px 100px at 0px 147px, #0f0, #0000),
+            radial-gradient(4px 100px at 310px 147px, #0f0, #0000),
+            radial-gradient(1.5px 1.5px at 155px 73.5px, #0f0 100%, #0000 150%),
+            radial-gradient(4px 100px at 0px 287px, #0f0, #0000),
+            radial-gradient(4px 100px at 310px 287px, #0f0, #0000),
+            radial-gradient(1.5px 1.5px at 155px 143.5px, #0f0 100%, #0000 150%),
+            radial-gradient(4px 100px at 0px 110px, #0f0, #0000),
+            radial-gradient(4px 100px at 310px 110px, #0f0, #0000),
+            radial-gradient(1.5px 1.5px at 155px 55px, #0f0 100%, #0000 150%),
+            radial-gradient(4px 100px at 0px 297px, #0f0, #0000),
+            radial-gradient(4px 100px at 310px 297px, #0f0, #0000),
+            radial-gradient(1.5px 1.5px at 155px 148.5px, #0f0 100%, #0000 150%),
+            radial-gradient(4px 100px at 0px 142px, #0f0, #0000),
+            radial-gradient(4px 100px at 310px 142px, #0f0, #0000),
+            radial-gradient(1.5px 1.5px at 155px 71px, #0f0 100%, #0000 150%),
+            radial-gradient(4px 100px at 0px 188px, #0f0, #0000),
+            radial-gradient(4px 100px at 310px 188px, #0f0, #0000),
+            radial-gradient(1.5px 1.5px at 155px 94px, #0f0 100%, #0000 150%);
+    background-size: 310px 273px, 310px 273px, 310px 273px, 310px 162px, 310px 162px, 310px 162px, 310px 219px, 310px 219px, 310px 219px, 310px 183px, 310px 183px, 310px 183px, 310px 256px, 310px 256px, 310px 256px, 310px 129px, 310px 129px, 310px 129px, 310px 147px, 310px 147px, 310px 147px, 310px 287px, 310px 287px, 310px 287px, 310px 110px, 310px 110px, 310px 110px, 310px 297px, 310px 297px, 310px 297px, 310px 142px, 310px 142px, 310px 142px, 310px 188px, 310px 188px, 310px 188px;
+    animation: rain-da0e06f2 150s linear infinite;
+}
+
+@keyframes rain-da0e06f2 {
+    0% {
+        background-position: 0px 193px, 3px 193px, 156.5px 329.5px, 25.833333333333332px 17px, 28.833333333333332px 17px, 182.33333333333334px 98px, 51.666666666666664px 38px, 54.666666666666664px 38px, 208.16666666666666px 147.5px, 77.5px 33px, 80.5px 33px, 234px 124.5px, 103.33333333333333px 93px, 106.33333333333333px 93px, 259.8333333333333px 221px, 129.16666666666666px 109px, 132.16666666666666px 109px, 285.66666666666663px 173.5px, 155px 147px, 158px 147px, 311.5px 220.5px, 180.83333333333334px 165px, 183.83333333333334px 165px, 337.33333333333337px 308.5px, 206.66666666666666px 71px, 209.66666666666666px 71px, 363.16666666666663px 126px, 232.5px 64px, 235.5px 64px, 389px 212.5px, 258.3333333333333px 43px, 261.3333333333333px 43px, 414.8333333333333px 114px, 284.1666666666667px 40px, 287.1666666666667px 40px, 440.6666666666667px 134px;
+    }
+    to {
+        background-position: 0px 8383px, 3px 8383px, 156.5px 8519.5px, 25.833333333333332px 7955px, 28.833333333333332px 7955px, 182.33333333333334px 8036px, 51.666666666666664px 15368px, 54.666666666666664px 15368px, 208.16666666666666px 15477.5px, 77.5px 12843px, 80.5px 12843px, 234px 12934.5px, 103.33333333333333px 17245px, 106.33333333333333px 17245px, 259.8333333333333px 17373px, 129.16666666666666px 6559px, 132.16666666666666px 6559px, 285.66666666666663px 6623.5px, 155px 6468px, 158px 6468px, 311.5px 6541.5px, 180.83333333333334px 7914px, 183.83333333333334px 7914px, 337.33333333333337px 8057.5px, 206.66666666666666px 7771px, 209.66666666666666px 7771px, 363.16666666666663px 7826px, 232.5px 8380px, 235.5px 8380px, 389px 8528.5px, 258.3333333333333px 7569px, 261.3333333333333px 7569px, 414.8333333333333px 7640px, 284.1666666666667px 5116px, 287.1666666666667px 5116px, 440.6666666666667px 5210px;
+    }
+}
