@@ -13,7 +13,6 @@ type Props = {
     mediaType: "image" | "video";
     skills: Array<Skill>;
     knowMore: string;
-
 };
 
 const Project = ({title, description, media, mediaType, skills, knowMore}: Props) => {

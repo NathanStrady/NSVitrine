@@ -1,25 +1,36 @@
 'use client'
 
-import { useState } from 'react';
-import {TransitionLink} from "@/app/components/utils/TransitionLink";
-
-
+import {useCallback, useEffect, useState} from 'react';
 
 export const Navbar = () => {
+    const [activeSection, setActiveSection] = useState("Home");
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
     const navItems = [
-        { name: "Compétences", href: "/", isActive: true },
-        { name: "Parcours", href: "/about", isActive: false },
-        { name: "Projets", href: "/SuperIsland", isActive: false },
+        { name: "Home", id: "home" },
+        { name: "Compétences", id: "skills" },
+        { name: "Parcours", id: "parcours" },
+        { name: "Projets", id: "projects" },
     ];
 
+    useEffect(() => {
+        setActiveSection("Home")
+    }, [])
+
+    const scrollToSection = useCallback(
+        (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({behavior: "smooth"});
+        }
+    }, [])
+
     return (
-        <div className="bg-background text-foreground card-shadow w-full absolute top-0 z-50">
-            <nav className="bg-background max-w-10xl mx-auto p-6 flex items-center relative justify-between ">
+        <div className="bg-background text-foreground card-shadow w-full fixed top-0 z-50 md:relative">
+            <nav className="bg-background max-w-10xl mx-auto p-6 flex items-center relative justify-between">
                 <p className="text-lg font-bold lg:text-xl">© Fait par Strady Nathan</p>
                 <button
                     className="relative md:hidden ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -43,23 +54,36 @@ export const Navbar = () => {
                     >
                         {navItems.map((item, index) => (
                             <li key={index} className="py-4 md:py-0 md:mr-6">
-                                <TransitionLink href={item.href} className="flex item-center">
+                                <div
+                                    onClick={() => {
+                                        setActiveSection(item.name);
+                                        scrollToSection(item.id);
+                                    }}
+                                    className={`cursor-pointer p-2 transition-colors duration-300 ${
+                                        activeSection === item.name ? "text-white bg-primary rounded-lg font-bold" : "text-white hover:text-primary"
+                                    }`}
+                                >
                                     {item.name}
-                                </TransitionLink>
+                                </div>
                             </li>
                         ))}
                     </ul>
                 </div>
-
-
-                {/* Desktop Menu */}
                 <div className="hidden md:block">
                     <ul className="flex flex-row gap-2">
                         {navItems.map((item, index) => (
                             <li key={index} className="flex items-center text-black-600 p-3">
-                                <TransitionLink href={item.href} className="flex item-center">
+                                <div
+                                    onClick={() => {
+                                        setActiveSection(item.name);
+                                        scrollToSection(item.id);
+                                    }}
+                                    className={`cursor-pointer p-2 transition-colors duration-300 ${
+                                        activeSection === item.name ? "text-white bg-primary rounded-lg font-bold" : "text-white hover:text-primary"
+                                    }`}
+                                >
                                     {item.name}
-                                </TransitionLink>
+                                </div>
                             </li>
                         ))}
                     </ul>

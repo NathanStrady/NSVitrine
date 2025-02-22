@@ -14,7 +14,7 @@ export const projectsData = [
                 icon: "/icons/csharp-icon.svg",
             }
         ],
-        knowMore: "_blank"
+        knowMore: "/ProjectSky"
     },
     {
         title: "Super Island",
@@ -32,7 +32,7 @@ export const projectsData = [
                 icon: "/icons/csharp-icon.svg",
             }
         ],
-        knowMore: "_blank"
+        knowMore: "/SuperIsland"
     },
     {
         title: "Secom",
@@ -61,6 +61,6 @@ export const projectsData = [
                 icon: "/icons/sql-icon.svg",
             },
         ],
-        knowMore: "_blank"
+        knowMore: "/Secom"
     },
 ]
