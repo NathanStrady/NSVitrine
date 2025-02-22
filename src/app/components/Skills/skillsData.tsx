@@ -1,85 +1,36 @@
-export const tools = [
+export const skillsGroupsData = [
     {
-        icon: "/icons/unity-icon.svg",
-        text: 'Unity'
+        title: "Hard-Skills",
+        skills: [
+            { icon: "/icons/csharp-icon.svg", name: "CSharp" },
+            { icon: "/icons/cpp-icon.png", name: "C++" },
+            { icon: "/icons/python-icon.svg", name: "Python" },
+            { icon: "/icons/java-icon.svg", name: "Java" },
+            { icon: "/icons/sql-icon.svg", name: "SQL" },
+            { icon: "/icons/javascript-icon.svg", name: "Javascript" },
+            { icon: "/icons/typescript-icon.svg", name: "Typescript" },
+            { icon: "/icons/vuejs-icon.svg", name: "Vue.Js" },
+            { icon: "/icons/html-icon.svg", name: "HTML" },
+        ],
     },
     {
-        icon: "/icons/github-icon.svg",
-        text: 'GitHub'
+        title: "Outils Utilisée",
+        skills: [
+            { icon: "/icons/unity-icon.svg", name: "Unity" },
+            { icon: "/icons/github-icon.svg", name: "GitHub" },
+            { icon: "/icons/webstorm-icon.svg", name: "Webstorm" },
+            { icon: "/icons/intellij-icon.svg", name: "Intellij Idea" },
+            { icon: "/icons/ryder-icon.svg", name: "Rider" },
+            { icon: "/icons/pycharm-icon.svg", name: "PyCharm" },
+            { icon: "/icons/visual-icon.svg", name: "Visual Studio" },
+        ],
     },
     {
-        icon: "/icons/webstorm-icon.svg",
-        text: 'Webstorm'
+        title: "Soft-Skills",
+        skills: [
+            { icon: "/icons/teamwork-icon.svg", name: "Travailler en équipe" },
+            { icon: "/icons/fast-learner-icon.png", name: "Apprend Vite" },
+            { icon: "/icons/autonomy-icon.png", name: "Autodidacte" },
+        ],
     },
-    {
-        icon: "/icons/intellij-icon.svg",
-        text: 'Intellij Idea'
-    },
-    {
-        icon: "/icons/ryder-icon.svg",
-        text: 'Rider'
-    },
-    {
-        icon: "/icons/pycharm-icon.svg",
-        text: 'PyCharm'
-    },
-    {
-        icon: "/icons/visual-icon.svg",
-        text: 'Visual Studio'
-    },
-
-]
-
-export const hardSkills = [
-    {
-        icon: "/icons/csharp-icon.svg",
-        text: 'CSharp'
-    },
-    {
-        icon: "/icons/cpp-icon.png",
-        text: 'C++'
-    },
-    {
-        icon: "/icons/python-icon.svg",
-        text: 'Python'
-    },
-    {
-        icon: "/icons/java-icon.svg",
-        text: 'Java'
-    },
-    {
-        icon: "/icons/sql-icon.svg",
-        text: 'SQL'
-    },
-    {
-        icon: "/icons/javascript-icon.svg",
-        text: 'Javascript'
-    },
-    {
-        icon: "/icons/typescript-icon.svg",
-        text: 'Typescript'
-    },
-    {
-        icon: "/icons/vuejs-icon.svg",
-        text: 'Vue.Js'
-    },
-    {
-        icon: "/icons/html-icon.svg",
-        text: 'Html'
-    },
-]
-
-export const softSkills = [
-    {
-        icon: "/icons/teamwork-icon.svg",
-        text: 'Travailler en équipe'
-    },
-    {
-        icon: "/icons/fast-learner-icon.png",
-        text: 'Apprend Vite '
-    },
-    {
-        icon: "/icons/autonomy-icon.png",
-        text: 'Autodidacte'
-    },
-]
+];

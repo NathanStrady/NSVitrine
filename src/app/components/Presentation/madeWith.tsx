@@ -1,14 +1,14 @@
 export const madeWith = [
     {
-        src: "/nextjs_icon.svg"
+        src: "/icons/nextjs-icon-white.svg",
     },
     {
-        src: "/typescript_icon.svg"
+        src: "/typescript_icon.svg",
     },
     {
-        src: "/github_icon.svg"
+        src: "/icons/github-outline-fill-icon.svg",
     },
     {
-        src: "/vercel.svg"
+        src: "/icons/webstorm-icon.svg",
     },
 ]
