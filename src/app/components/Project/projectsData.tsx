@@ -38,7 +38,7 @@ export const projectsData = [
         title: "Secom",
         description: "Application web développée pour le site de SKF Aeroengine Valenciennes. Ce projet, réalisé dans le cadre de mon alternance, avait pour objectif de simplifier les processus de l’usine en centralisant les données issues de l’ERP utilisé par l’entreprise.",
         media: "/images/top_background.png",
-        mediaType: "images",
+        mediaType: "image",
         skills: [
             {
                 name: "Visual Studio",
