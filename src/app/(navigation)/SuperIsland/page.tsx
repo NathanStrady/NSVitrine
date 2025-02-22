@@ -32,7 +32,7 @@ const SuperIsland = () => {
                                             Ce projet a été réalisé dans le cadre de mes cours en BUT Informatique, spécifiquement sur la programmation 3D. Nous étions deux à développer ce jeu en seulement 3 semaines. Bien que tout ne soit pas parfait, nous sommes fiers du résultat.
                                         </p>
                                         <p>
-                                            L'objectif était de créer un jeu de plateforme en 3D avec des ennemis et des collectibles. Vous pouvez l'essayer par vous-même juste au-dessus !
+                                            L&#8217;objectif était de créer un jeu de plateforme en 3D avec des ennemis et des collectibles. Vous pouvez l&#8217;essayer par vous-même juste au-dessus !
                                         </p>
                                     </div>
                                 </div>

@@ -32,7 +32,7 @@ const ProjectSky = () => {
                                             Ce projet a été réalisé pendant mon temps libre. Mon idée était de créer un jeu de plateforme en 2D inspiré de <span className="font-bold">Super Meat Boy</span>.
                                         </p>
                                         <p>
-                                            C'est dans cette optique que j'ai créé mon premier jeu tout en découvrant Unity. Mon objectif était de bien comprendre la physique du moteur, et j'ai donc mis l'accent sur la réalisation de déplacements fluides, en intégrant des éléments comme le Coyote Time, une sensation d'inertie, etc...
+                                            C&#8217;est dans cette optique que j&#8217;ai créé mon premier jeu tout en découvrant Unity. Mon objectif était de bien comprendre la physique du moteur, et j&#8217;ai donc mis l&#8217;accent sur la réalisation de déplacements fluides, en intégrant des éléments comme le Coyote Time, une sensation d&#8217;inertie, etc...
                                         </p>
                                         <p>
                                             En résumé, je pense que ce projet était un excellent point de départ pour apprendre Unity !

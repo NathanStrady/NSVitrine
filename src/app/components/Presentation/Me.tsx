@@ -9,13 +9,13 @@ const Me = () => {
             <div className="flex flex-col gap-[13px] items-center md:gap-[34px] md:my-[58px] md:items-start">
                 <Reveal initialX={-25} >
                     <h1 className="text-2xl/1 text-center font-semibold block md:text-[35px] md:text-start md:inline">
-                        Salutations ! Je me nomme Nathan Strady et j'aime {" "}
+                        Salutations ! Je me nomme Nathan Strady et j&#8217;aime {" "}
                         <span className="block text-[27px] highlight mt-2 md:text-[40px] md:inline md:mt-0"> Développer</span> :)
                     </h1>
                 </Reveal>
                 <Reveal initialX={-40} delay={0.4}>
                     <p className="text-center text-sm md:text-[20px] md:text-start md:mx-0 md:self-start">
-                        Passionné par l'Informatique depuis le lycée, mon rêve est de développer mon propre jeu vidéo.
+                        Passionné par l&#8217;Informatique depuis le lycée, mon rêve est de développer mon propre jeu vidéo.
                     </p>
                 </Reveal>
                 <div className="rounded-lg p-2 w-full">
