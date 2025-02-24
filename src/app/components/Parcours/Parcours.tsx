@@ -7,7 +7,7 @@ import Reveal from "@/app/components/Reveal/Reveal";
 
 const parcours = () => {
     return (
-        <SectionContainer id="parcours">
+        <SectionContainer id="Parcours">
             <div className="flex flex-col">
                 <SectionHeader text="Mon parcours" highlightText="Académique & Professionnel"/>
                 <Reveal initialY={40} delay={0.7}>

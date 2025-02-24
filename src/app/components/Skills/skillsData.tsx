@@ -14,6 +14,14 @@ export const skillsGroupsData = [
         ],
     },
     {
+        title: "Soft-Skills",
+        skills: [
+            { icon: "/icons/teamwork-icon.svg", name: "Travailler en équipe" },
+            { icon: "/icons/fast-learner-icon.png", name: "Apprend Vite" },
+            { icon: "/icons/autonomy-icon.png", name: "Autodidacte" },
+        ],
+    },
+    {
         title: "Outils Utilisée",
         skills: [
             { icon: "/icons/unity-icon.svg", name: "Unity" },
@@ -23,14 +31,6 @@ export const skillsGroupsData = [
             { icon: "/icons/ryder-icon.svg", name: "Rider" },
             { icon: "/icons/pycharm-icon.svg", name: "PyCharm" },
             { icon: "/icons/visual-icon.svg", name: "Visual Studio" },
-        ],
-    },
-    {
-        title: "Soft-Skills",
-        skills: [
-            { icon: "/icons/teamwork-icon.svg", name: "Travailler en équipe" },
-            { icon: "/icons/fast-learner-icon.png", name: "Apprend Vite" },
-            { icon: "/icons/autonomy-icon.png", name: "Autodidacte" },
         ],
     },
 ];

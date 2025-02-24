@@ -7,7 +7,7 @@ import Reveal from "@/app/components/Reveal/Reveal";
 
 const Skills = () => {
     return (
-        <SectionContainer id="skills">
+        <SectionContainer id="Compétences">
             <div className="flex flex-col">
                 <SectionHeader text="Mes" highlightText="Compétences" />
                 <div className="section-content p-2 space-y-5">

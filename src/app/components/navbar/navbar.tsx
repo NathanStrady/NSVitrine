@@ -10,23 +10,46 @@ export const Navbar = () => {
     };
 
     const navItems = [
-        { name: "Home", id: "home" },
-        { name: "Compétences", id: "skills" },
-        { name: "Parcours", id: "parcours" },
-        { name: "Projets", id: "projects" },
+        { name: "Home", id: "Home" },
+        { name: "Compétences", id: "Compétences" },
+        { name: "Parcours", id: "Parcours" },
+        { name: "Projets", id: "Projets" },
     ];
 
     useEffect(() => {
-        setActiveSection("Home")
-    }, [])
+        const targetSection = sessionStorage.getItem("targetSection");
+
+        if (targetSection) {
+
+            const section = document.getElementById(targetSection);
+            if (section) {
+                setTimeout(() => {
+                    section.scrollIntoView({ behavior: "smooth" });
+                    setActiveSection(targetSection);
+                }, 100);
+            }
+
+            sessionStorage.removeItem("targetSection");
+        } else {
+            setActiveSection("Home");
+        }
+    }, []);
 
     const scrollToSection = useCallback(
         (sectionId: string) => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({behavior: "smooth"});
-        }
-    }, [])
+            const section = document.getElementById(sectionId);
+            if (window.location.pathname !== "/") {
+                sessionStorage.setItem("targetSection", sectionId);
+                window.location.href = `/`;
+                return;
+            }
+
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        },
+        []
+    );
 
     return (
         <div className="bg-background text-foreground card-shadow w-full fixed top-0 z-50 md:relative">
