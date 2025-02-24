@@ -34,7 +34,7 @@ const Secom = () => {
                                         <ul className="list-disc pl-10">
                                             <li>Créer différentes fiches (suivi, non-conformités, etc.).</li>
                                             <li>Centraliser les informations entre les services.</li>
-                                            <li>Afficher efficacement les données de l'ERP.</li>
+                                            <li>Afficher efficacement les données de l&#8217;ERP.</li>
                                         </ul>
                                     </div>
                                 </div>
