@@ -2,7 +2,7 @@ export const projectsData = [
     {
         title: "Project Sky",
         description: "Projet réalisé sur mon temps libre. Il s'agit d'un jeu de plateforme inspiré de Super Meat Boy, offrant un gameplay exigeant et une prise en main fluide. L'objectif était pour moi de découvrir Unity à travers ce projet.",
-        media: "/videos/Demonstration_super_island.mkv",
+        media: "/videos/Démonstration.webm",
         mediaType: "video",
         skills: [
             {
@@ -20,7 +20,7 @@ export const projectsData = [
         title: "Super Island",
         description: "Projet réalisé en équipe de deux dans le cadre du semestre 5 du BUT Informatique. L'objectif était de développer un jeu de plateforme 3D fonctionnel, intégrant des collectibles et des ennemis.\n" +
             "Étant limités en effectif, nous avons opté pour l'utilisation d'assets gratuits afin de constituer la partie graphique du jeu.",
-        media: "/videos/Demonstration_super_island.mkv",
+        media: "/videos/Démonstration.webm",
         mediaType: "video",
         skills: [
             {
