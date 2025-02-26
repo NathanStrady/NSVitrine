@@ -18,9 +18,7 @@ export const Navbar = () => {
 
     useEffect(() => {
         const targetSection = sessionStorage.getItem("targetSection");
-
         if (targetSection) {
-
             const section = document.getElementById(targetSection);
             if (section) {
                 setTimeout(() => {
@@ -28,7 +26,6 @@ export const Navbar = () => {
                     setActiveSection(targetSection);
                 }, 100);
             }
-
             sessionStorage.removeItem("targetSection");
         } else {
             setActiveSection("Home");
@@ -43,7 +40,6 @@ export const Navbar = () => {
                 window.location.href = `/`;
                 return;
             }
-
             if (section) {
                 section.scrollIntoView({ behavior: "smooth" });
             }
