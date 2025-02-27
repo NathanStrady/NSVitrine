@@ -2,7 +2,7 @@ export const projectsData = [
     {
         title: "Project Sky",
         description: "Projet réalisé sur mon temps libre. Il s'agit d'un jeu de plateforme inspiré de Super Meat Boy, offrant un gameplay exigeant et une prise en main fluide. L'objectif était pour moi de découvrir Unity à travers ce projet.",
-        media: "/videos/Démonstration.webm",
+        media: "/videos/projectsky.webm",
         mediaType: "video",
         skills: [
             {
