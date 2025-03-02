@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Portfolio de Nathan Strady
 
-First, run the development server:
+Bienvenue sur le code source de mon portfolio. Vous pouvez voir la disposition du projet et le code dans les différents dossier. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Le projet est réalisé sous NextJS, TypeScript, HeroUI et est déployé via Vercel. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 A propos de moi
+Je m'appelle Nathan Strady et, au moment où je rédige ces lignes, je suis étudiant en troisième année du BUT Informatique à l'IUT de Maubeuge. Actuellement, je suis alternant chez SKF Aeroengines Valenciennes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Je souhaite poursuivre mes études, et c'est dans cette optique que j'ai réalisé ce portfolio. Bien qu'il ne soit pas limité au cadre scolaire, je compte également l'utiliser dans le milieu professionnel.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔗 Liens Importants
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ns-vitrine.vercel.app/)
 
-## Learn More
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nathan-strady-911aab265/)
 
-To learn more about Next.js, take a look at the following resources:
+## Auteurs
+[@NathanStrady](https://github.com/NathanStrady)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
