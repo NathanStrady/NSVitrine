@@ -40,7 +40,7 @@ const Me = () => {
                         ))
                         }
                         <Reveal initialY={40} delay={1.2}>
-                            <a className="infos-button flex font-normal p-2.5 gap-2.5" href="https://github.com/NathanStrady/NSVitrine/tree/master" target="_blank">
+                            <a className="infos-button flex font-normal p-2.5 gap-2.5" href="https://github.com/NathanStrady/NSVitrine/tree/main" target="_blank">
                                 Voir le code Source <img className="w-8 h-8" src="/icons/git-vcs-color.svg" alt="github-repo"/>
                             </a>
                         </Reveal>
