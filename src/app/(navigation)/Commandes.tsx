@@ -1,7 +1,15 @@
 export const commandsSuperIsland = [
     {
+        title: "Capture de la souris",
+        desc: "Cliquez sur la fenêtre du jeu pour que votre souris soit capturer par le jeu, cela vous permettra de déplacer la caméra librement.",
+    },
+    {
+        title: "Quitter le mode capture",
+        desc: "Appuyez sur Echap pour quitter ce mode.",
+    },
+    {
         title: "Se déplacer",
-        desc: "ZQSD / Stick Gauche",
+        desc: "WASD / Stick Gauche",
     },
     {
         title: "Caméra",
@@ -13,18 +21,22 @@ export const commandsSuperIsland = [
     },
     {
         title: "Menu (Déplacement)",
-        desc: "ZQSD / Stick Gauche",
+        desc: "WASD / Stick Gauche",
+    },
+    {
+        title: "Menu (Pause)",
+        desc: "E / Start",
     },
     {
         title: "Menu (Intéraction)",
-        desc: "E / A",
+        desc: "Entrée / A",
     },
 ]
 
 export const commandsProjectSky = [
     {
         title: "Se déplacer",
-        desc: "ZQSD / Stick Gauche",
+        desc: "WASD / Stick Gauche",
     },
     {
         title: "Sauter",
@@ -35,7 +47,11 @@ export const commandsProjectSky = [
         desc: "ZQSD / Stick Gauche",
     },
     {
+        title: "Menu (Pause)",
+        desc: "Escape / Start",
+    },
+    {
         title: "Menu (Intéraction)",
-        desc: "E / A",
+        desc: "Entrée / A",
     },
 ]

@@ -1,7 +1,7 @@
 export const contact = [
     {
         name:"github",
-        src:"/icons/github-outline-fill-icon.svg",
+        src:"/icons/git-vcs-white.svg",
         link:"https://github.com/NathanStrady"
     },
     {

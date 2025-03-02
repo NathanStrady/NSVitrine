@@ -18,9 +18,9 @@ const ProjectSky = () => {
                         <SectionHeader text={"Project"} highlightText={"Sky"}/>
                         <Reveal initialX={-60} delay={0.3}>
                             <div className="section-content p-3 space-y-5">
-                                <div className="w-full card card-shadow p-6">
-                                    <div className="py-6">
-                                        <UnityGame projectName="projectSky" />
+                                <div className="w-full card card-shadow p-6 cursor-pointer">
+                                    <div className="py-6r">
+                                        <UnityGame projectName="projectSky"/>
                                     </div>
                                 </div>
                                 <div className="w-full card card-shadow p-6">

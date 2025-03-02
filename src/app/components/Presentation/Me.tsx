@@ -41,7 +41,7 @@ const Me = () => {
                         }
                         <Reveal initialY={40} delay={1.2}>
                             <a className="infos-button flex font-normal p-2.5 gap-2.5" href="https://github.com/NathanStrady/NSVitrine/tree/master" target="_blank">
-                                Voir le code Source <img className="w-8 h-8" src="/icons/github-outline-fill-icon.svg" alt="github-repo"/>
+                                Voir le code Source <img className="w-8 h-8" src="/icons/git-vcs-color.svg" alt="github-repo"/>
                             </a>
                         </Reveal>
                     </div>
@@ -53,13 +53,13 @@ const Me = () => {
                            alt="Nathan Strady profile"
                            width={420}
                            height={430}
-                           className="hidden md:block absolute w-[420px] h-[430px] top-12 right-6 -z-10 group-hover:scale-[110%] ease-in-out duration-300"
+                           className="hidden md:block md:top-[230px] md:right-8 lg:block absolute md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[430px] lg:top-12 lg:right-6 -z-10 group-hover:scale-[110%] ease-in-out duration-300"
                     />
                     <Image src="/images/ns_photo.png"
                            alt="Nathan Strady profile"
                            width={400}
                            height={417}
-                           className="hidden md:block rounded-full min-w-[400px] h-[417px] top-0 z-10 mr-[7.7px] my-[6.5px]
+                           className="hidden md:block rounded-full md:min-w-[300px] md:h-[300px] lg:min-w-[400px] lg:h-[417px] top-0 z-10 mr-[7.7px] my-[6.5px]
                            group-hover:scale-[110%] ease-in-out duration-300"
                     >
                     </Image>

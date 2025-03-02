@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 
 type UnityGameProps = {
@@ -15,8 +15,34 @@ const UnityGame = ({ projectName }: UnityGameProps) => {
         codeUrl: `/games/${projectName}/Build/${projectName}.wasm`,
     });
 
+    const unityRef = useRef<HTMLDivElement>(null);
+    const [devicePixelRatio, setDevicePixelRatio] = useState(window.devicePixelRatio);
+
+    useEffect(() => {
+        const updateDevicePixelRatio = () => {
+            setDevicePixelRatio(window.devicePixelRatio);
+        };
+
+        const mediaMatcher = window.matchMedia(`screen and (resolution: ${devicePixelRatio}dppx)`);
+        mediaMatcher.addEventListener("change", updateDevicePixelRatio);
+
+        return () => {
+            mediaMatcher.removeEventListener("change", updateDevicePixelRatio);
+        };
+    }, [devicePixelRatio]);
+
+    const handleMouseDown = () => {
+        if (unityRef.current) {
+            unityRef.current.requestPointerLock();
+        }
+    };
+
     return (
-        <div className="flex flex-col w-full h-full items-center justify-center">
+        <div
+            ref={unityRef}
+            className="flex flex-col w-full h-full items-center justify-center"
+            onMouseDown={handleMouseDown}
+        >
             {!isLoaded && (
                 <p className="text-white text-center">
                     Chargement de {projectName}... {Math.round(loadingProgression * 100)}%
@@ -25,6 +51,7 @@ const UnityGame = ({ projectName }: UnityGameProps) => {
             <Unity
                 unityProvider={unityProvider}
                 className="w-full h-full items-center justify-center"
+                devicePixelRatio={devicePixelRatio}
             />
         </div>
     );

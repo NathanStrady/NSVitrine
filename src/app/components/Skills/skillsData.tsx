@@ -25,7 +25,7 @@ export const skillsGroupsData = [
         title: "Outils Utilisée",
         skills: [
             { icon: "/icons/unity-icon.svg", name: "Unity" },
-            { icon: "/icons/github-icon.svg", name: "GitHub" },
+            { icon: "/icons/git-vcs-color.svg", name: "Git" },
             { icon: "/icons/webstorm-icon.svg", name: "Webstorm" },
             { icon: "/icons/intellij-icon.svg", name: "Intellij Idea" },
             { icon: "/icons/ryder-icon.svg", name: "Rider" },
