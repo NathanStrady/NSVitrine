@@ -22,7 +22,7 @@ export const skillsGroupsData = [
         ],
     },
     {
-        title: "Outils Utilisée",
+        title: "Outils Utilisés",
         skills: [
             { icon: "/icons/unity-icon.svg", name: "Unity" },
             { icon: "/icons/git-vcs-color.svg", name: "Git" },

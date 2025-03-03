@@ -32,7 +32,9 @@ const ProjectSky = () => {
                                             Ce projet a été réalisé pendant mon temps libre. Mon idée était de créer un jeu de plateforme en 2D inspiré de <span className="font-bold">Super Meat Boy</span>.
                                         </p>
                                         <p>
-                                            C&#8217;est dans cette optique que j&#8217;ai créé mon premier jeu tout en découvrant Unity. Mon objectif était de bien comprendre la physique du moteur, et j&#8217;ai donc mis l&#8217;accent sur la réalisation de déplacements fluides, en intégrant des éléments comme le Coyote Time, une sensation d&#8217;inertie, etc...
+                                            Dans cette optique, j&#8217;ai développé mon premier jeu tout en découvrant Unity.
+                                            Mon objectif était de bien comprendre la physique du moteur,
+                                            c&#8217;est pourquoi j&#8217;ai mis l’accent sur des déplacements fluides en intégrant des éléments comme le Coyote Time, une sensation d&#8217;inertie, etc.
                                         </p>
                                         <p>
                                             En résumé, je pense que ce projet était un excellent point de départ pour apprendre Unity !
@@ -41,11 +43,11 @@ const ProjectSky = () => {
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10">
                                     {[
-                                        { title: "Commandes", content: commandsProjectSky },
+                                        { title: "Commandes (Manette conseillée)", content: commandsProjectSky },
                                         { title: "Contenu", content: contentProjectSky },
                                     ].map((section, index) => (
                                         <div key={index} className="card card-shadow px-8 py-6 w-full">
-                                            <h1 className="text-[25px] md:text-[36px] font-semibold">{section.title}</h1>
+                                            <h1 className="text-[25px] md:text-[30px] font-semibold">{section.title}</h1>
                                             <div className="py-3 text-justify text-[15px] md:text-[20px] space-y-3">
                                                 {section.title === "Commandes" ? (
                                                     <ul className="space-y-2">

@@ -15,7 +15,7 @@ const Secom = () => {
                         <Reveal initialX={-60} delay={0.3}>
                             <div className="section-content p-2 space-y-2">
                                 <div className="px-8 py-6 w-full card card-shadow">
-                                    <img src="/images/top_background.png" alt="secom image"
+                                    <img src="/images/Secom.PNG" alt="secom image"
                                          className="w-full object-cover rounded-lg"/>
                                 </div>
                                 <div className="w-full card card-shadow p-6">
@@ -38,9 +38,9 @@ const Secom = () => {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10">
                                     {secomImages.map((items, i) => (
-                                        <div className="p-3 card card-shadow " key={i}>
+                                        <div className="p-3 card card-shadow" key={i}>
                                             <img src={items.src} alt={'secom ' + i}
                                                  className="w-full object-cover rounded-lg"/>
                                         </div>

@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="mx-auto w-full p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-3">
-                        <span className="self-center text-[30px] font-bold whitespace-nowrap">Me contacter ? 📩</span>
+                        <span className="self-center text-[30px] font-bold whitespace-nowrap">Me contacter 📩</span>
                     </div>
                 </div>
                 <div className="grid grid-cols-2 gap-6 md:gap-2 md:grid-cols-3 text-start">

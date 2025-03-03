@@ -1,11 +1,8 @@
 export const secomImages = [
     {
-        src: "/images/top_background.png",
+        src: "/images/FsoSecom.png",
     },
     {
-        src: "/images/top_background.png",
+        src: "/images/FacSecom.png",
     },
-    {
-        src: "/images/top_background.png",
-    }
 ]

@@ -1,10 +1,10 @@
 export const commandsSuperIsland = [
     {
-        title: "Capture de la souris",
-        desc: "Cliquez sur la fenêtre du jeu pour que votre souris soit capturer par le jeu, cela vous permettra de déplacer la caméra librement.",
+        title: "Mode Focus",
+        desc: "Cliquez sur la fenêtre du jeu pour activer le mode focus, ce qui permettra de verrouiller la souris et de déplacer la caméra plus facilement.",
     },
     {
-        title: "Quitter le mode capture",
+        title: "Quitter le mode Focus",
         desc: "Appuyez sur Echap pour quitter ce mode.",
     },
     {

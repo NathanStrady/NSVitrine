@@ -48,7 +48,7 @@ export const Navbar = () => {
     );
 
     return (
-        <div className="bg-background text-foreground card-shadow w-full fixed top-0 z-50 md:relative">
+        <div className="bg-background text-foreground card-shadow w-full fixed top-0 z-50">
             <nav className="bg-background max-w-10xl mx-auto p-6 flex items-center relative justify-between">
                 <p className="text-lg font-bold lg:text-xl">© Fait par Strady Nathan</p>
                 <button

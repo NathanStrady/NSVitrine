@@ -38,11 +38,11 @@ const SuperIsland = () => {
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10">
                                     {[
-                                        { title: "Commandes", content: commandsSuperIsland },
+                                        { title: "Commandes (Manette conseillée)", content: commandsSuperIsland },
                                         { title: "Contenu", content: contentSuperIsland },
                                     ].map((section, index) => (
                                         <div key={index} className="card card-shadow px-8 py-6 w-full">
-                                            <h1 className="text-[25px] md:text-[36px] font-semibold">{section.title}</h1>
+                                            <h1 className="text-[25px] md:text-[30px] font-semibold">{section.title}</h1>
                                             <div className="py-3 text-justify text-[15px] md:text-[20px] space-y-3">
                                                 {section.title === "Commandes" ? (
                                                     <ul className="space-y-2">
