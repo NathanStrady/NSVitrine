@@ -15,7 +15,7 @@ const Secom = () => {
                         <Reveal initialX={-60} delay={0.3}>
                             <div className="section-content p-2 space-y-2">
                                 <div className="px-8 py-6 w-full card card-shadow">
-                                    <img src="/images/Secom.PNG" alt="secom image"
+                                    <img src="/images/Secom.png" alt="secom image"
                                          className="w-full object-cover rounded-lg"/>
                                 </div>
                                 <div className="w-full card card-shadow p-6">
