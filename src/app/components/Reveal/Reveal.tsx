@@ -10,9 +10,9 @@ type Props = React.PropsWithChildren<{
     delay?: number;
 }>
 
-const Reveal = ({children, initialX = 0, initialY = 0, duration = 1, delay = 0}: Props) => {
+const Reveal = ({children, initialX = 0, initialY = 0, duration = 0.5, delay = 0}: Props) => {
     const ref = useRef(null)
-    const isInView = useInView(ref, { once: true});
+    const isInView = useInView(ref, { once: true });
 
     const controls = useAnimation();
 
@@ -20,22 +20,25 @@ const Reveal = ({children, initialX = 0, initialY = 0, duration = 1, delay = 0}:
         if (isInView) {
             controls.start("visible")
         }
-    }, [isInView]);
+    }, [isInView, controls]);
 
     return (
-        <motion.span initial="hidden" ref={ref} variants={{
-            hidden: {
-                opacity: 0,
-                x:initialX,
-                y:initialY
-            },
-            visible: {
-                opacity: 1,
-                x: 0,
-                y: 0,
-            }
-        }} transition={{duration, delay}}
-                     animate={controls}>{children}</motion.span>
+        <motion.span
+            ref={ref}
+            initial="hidden"
+            animate={controls}
+            variants={{
+                hidden: { opacity: 0,
+                    x: initialX,
+                    y: initialY },
+                visible: { opacity: 1,
+                    x: 0,
+                    y: 0 },
+            }}
+            transition={{ duration, delay, ease: "easeOut" }}
+        >
+            {children}
+        </motion.span>
     )
 }
 
